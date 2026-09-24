@@ -1,0 +1,50 @@
+﻿@model Obligatorio.LogicaAplicacion.DTO.DtoUsuarioAlta
+
+<h1 class="mb-4">Alta de usuario</h1>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Error
+    </div>
+}
+
+<form asp-action="Create" method="post">
+
+    <div class="form-group mb-3">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="NombreUsuario"></label>
+        <input asp-for="NombreUsuario" class="form-control" />
+        <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Contrasenia"></label>
+        <input asp-for="Contrasenia" type="password" class="form-control" />
+        <span asp-validation-for="Contrasenia" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Rol"></label>
+        <select asp-for="Rol" class="form-select">
+            <option value="">Seleccione un rol</option>
+            <option value="Administrador">Administrador</option>
+            <option value="Usuario">Usuario</option>
+        </select>
+        <span asp-validation-for="Rol" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear usuario</button>
+
+</form>

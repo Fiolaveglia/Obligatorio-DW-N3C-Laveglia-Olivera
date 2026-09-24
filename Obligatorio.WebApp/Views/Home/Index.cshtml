@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h1>Panel de administración</h1>
+
+<div class="list-group mt-4" style="max-width: 300px;">
+    <a asp-controller="Usuario" asp-action="Create" class="list-group-item list-group-item-action">Alta de usuarios</a>
+    <a asp-controller="Historia" asp-action="Create" class="list-group-item list-group-item-action">Alta de historia</a>
+    <a asp-controller="Login" asp-action="Logout" class="list-group-item list-group-item-action text-danger">Cerrar sesión</a>
+</div>

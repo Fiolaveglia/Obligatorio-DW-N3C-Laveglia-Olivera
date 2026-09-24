@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Obligatorio.Documentacion/">
+    <Project Path="Obligatorio.Infraestructura/Obligatorio.Infraestructura.csproj" />
+    <Project Path="Obligatorio.LogicaAplicacion/Obligatorio.LogicaAplicacion.csproj" />
+    <Project Path="Obligatorio.LogicaNegocio/Obligatorio.LogicaNegocio.csproj" />
+    <Project Path="Obligatorio.WebApp/Obligatorio.WebApp.csproj" />
+  </Folder>
+</Solution>
